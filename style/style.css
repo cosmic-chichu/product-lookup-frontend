@@ -18,10 +18,19 @@
   border-radius: 4px;
 }
 
+.list-group {
+  overflow-y: scroll;
+  height: 500px;
+}
+
 .list-group-item {
   cursor: pointer;
 }
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+.list-group-item:active {
+  background-color: yellow;
 }

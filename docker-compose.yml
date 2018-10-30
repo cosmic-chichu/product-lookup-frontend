@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  react-product-lookup:
+    build:
+      context: .
+    # Disable mounting of volumes if packages are not installed locally.
+    volumes:
+      - .:/app
+    # Wait for aerospike to be available on port 3000 before starting application
+    # command: ["./bin/wait-for-it.sh", "aerospike:3000", "--", "yarn", "start"]
+    env_file:
+      - bin/dev.env
+    # Pick ports from config or env.
+    ports:
+      - "127.0.0.1:9000:9000"

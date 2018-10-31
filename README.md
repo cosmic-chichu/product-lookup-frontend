@@ -17,5 +17,8 @@ https://github.com/shrivardhan92/product-lookup-api/wiki
 Stored .env and `/bin/dev.env`
 
 # Docker
- ### Image - docker pull cosmicchichu/reduxsimplestarter_react-product-lookup
- ### Running -         `docker-compose up -d`
+ ### Image
+  - `docker pull cosmicchichu/product-lookup-frontend`
+ ### Running 
+  - `docker-compose build`
+  - `docker-compose up -d`
